@@ -8,9 +8,9 @@ document.documentElement.classList.add('js');
 
 
 const services=[
- {t:'Production',d:'On-location photo and video, interviews, events and drone — edited, colored and cut for every format by our own crew.',tags:['Photo & video','Drone','Post-production'],v:''},
- {t:'Social Media',d:'Management and content for Instagram, TikTok, Facebook, LinkedIn, X and Google Business Profile.',tags:['Content calendar','Reels & Stories','Reporting'],v:'photo p-an2'},
- {t:'Creative',d:'Campaign graphics, digital ads, menus, catalogs, posters, copy and print.',tags:['Design & copy','Print & delivery'],v:'photo p-ag2'},
+ {t:'Production',d:'On-location photo and video, interviews, events and drone — edited, colored and cut for every format by our own crew.',tags:['Photo & video','Drone','Post-production'],v:'mv-raw-ana-2576'},
+ {t:'Social Media',d:'Management and content for Instagram, TikTok, Facebook, LinkedIn, X and Google Business Profile.',tags:['Content calendar','Reels & Stories','Reporting'],v:'mv-cleo-18'},
+ {t:'Creative',d:'Campaign graphics, digital ads, menus, catalogs, posters, copy and print.',tags:['Design & copy','Print & delivery'],v:'mi-st-agora-defpump'},
  {t:'Branding',d:'Logo, palette, typography, guidelines, positioning and brand voice.',tags:['Visual identity','Messaging'],v:'v4'},
  {t:'Digital',d:'Responsive websites, landing pages, local SEO and Meta ad campaigns.',tags:['Web & SEO','Meta ads'],v:'v6'},
  {t:'Influence & Partnerships',d:'Creator campaigns and local brand partnerships, from research to review.',tags:['Creators','Partnerships'],v:'v2'},
@@ -21,19 +21,8 @@ const logos=[
  ['d','','h','Rotary One',''],['e','dk','l','Cleopatra Ink',''],['g','','s','TACA','Chicago'],['h','','o','Bobby Dixon',''],
  ['i','','h','Chicago Fenerbahçeliler','Derneği'],['j','','l','Seyda Calderwood','Allstate']
 ];
-const stories=[
- {n:'Rotary One',h:'Content built for the feed',t:'Content production',v:'v4'},
- {n:'TACA Chicago',h:'Culture on Instagram',t:'Instagram content',v:'v3'},
- {n:'Agora Truck Parts',h:'Water Pump campaign',t:'Social media · Creative direction · Campaign design',v:'photo p-ag1'},
- {n:'Cleopatra Ink',h:'From studio to screen',t:'Social media · Design · Production',v:'v6'},
- {n:'Anatolia Chicago',h:'Mixed Kebab',t:'Social media · Content creation · Graphic design',v:'photo p-an1'},
- {n:'US Sabre Academy',h:'Every bout on camera',t:'Content & video production',v:'v2'},
- {n:'Chicago Fenerbahçeliler',h:'A community, one voice',t:'Social media · Graphic design',v:'v4'}
-];
-const lists={
- shorts:[['Agora Truck Parts','Campaign'],['Anatolia Chicago','Restaurant'],['Cleopatra Ink','Studio'],['US Sabre Academy','Academy'],['Rotary One','Content'],['TACA Chicago','Culture'],['FB Chicago','Community'],['Seyda Calderwood','Insurance'],['Bobby Dixon','Social']],
- projects:[['Agora Truck Parts','Website'],['QB Dental','Website & booking'],['Palace Istanbul','Website & SEO'],['FB Chicago','Association site'],['Hello Sweetie USA','Web game'],['Tria Yangın','Website']]
-};
+const stories=[{"n": "Anatolia Chicago", "h": "Time for Iskender", "t": "Social media · Reel edit", "v": "mv-ana-iskender"}, {"n": "Agora Truck Parts", "h": "Agora has your back", "t": "Social media · Reel edit", "v": "mv-agora-oct"}, {"n": "Cleopatra Ink", "h": "Stencil to skin", "t": "Social media · Reel edit", "v": "mv-cleo-15"}, {"n": "Hello Sweetie USA", "h": "The Treats", "t": "Social media · Reel edit", "v": "mv-hs-treats"}, {"n": "Anatolia Chicago", "h": "Heart of Anatolia", "t": "Social media · Reel edit", "v": "mv-ana-heart"}, {"n": "Seyda Calderwood · Allstate", "h": "Calderwood reel", "t": "Social media · Reel edit", "v": "mv-seyda-reel"}, {"n": "Agora Truck Parts", "h": "Go with Agora", "t": "Social media · Reel edit", "v": "mv-agora-reel"}, {"n": "Cleopatra Ink", "h": "That’s my art", "t": "Social media · Reel edit", "v": "mv-cleo-17"}, {"n": "Anatolia Chicago", "h": "Meze night", "t": "Social media · Reel edit", "v": "mv-ana-meze"}, {"n": "Cleopatra Ink", "h": "Halloween special", "t": "Social media · Reel edit", "v": "mv-cleo-16"}, {"n": "Agora Truck Parts", "h": "Order your next pair", "t": "Social media · Reel edit", "v": "mv-agora-zincir"}, {"n": "Anatolia Chicago", "h": "Saganaki", "t": "Social media · Reel edit", "v": "mv-ana-saganaki"}];
+const lists={"shorts": [["Anatolia Chicago", "All at Anatolia", "mv-ana-allat"], ["Agora Truck Parts", "Go with Agora", "mv-agora-reel"], ["Cleopatra Ink", "Tattoo session", "mv-cleo-13"], ["Seyda Calderwood", "Calderwood reel", "mv-seyda-reel"], ["Hello Sweetie USA", "The Treats", "mv-hs-treats"], ["Anatolia Chicago", "This or that?", "mv-ana-thisorthat"], ["Cleopatra Ink", "Harmony", "mv-cleo-harmony"]], "projects": [["Agora Truck Parts", "Water Pump campaign", "mi-st-agora-waterpump"], ["Anatolia Chicago", "Mixed Kebab", "mi-st-ana-mixedkebab"], ["Seyda Calderwood", "Drive Safe After Dark", "mi-st-seyda-2"], ["Agora Truck Parts", "Deer Guard", "mi-st-agora-deerguard"], ["Anatolia Chicago", "Beyti", "mi-st-ana-beyti"], ["Seyda Calderwood", "Winter Risks at Home", "mi-st-seyda-6"], ["Anatolia Chicago", "Bomonti", "mi-st-ana-bomonti"]]};
 const team=[['Team member','Founder','v4'],['Team member','Art Director','v2'],['Team member','Videographer','v6'],['Team member','Social Media Manager','']];
 const posts=[{"t": "Local SEO for Chicago small businesses: where to start", "c": "Local SEO", "d": "What actually moves you up in local search \u2014 your profile, reviews, pages and citations \u2014 and what to do first.", "u": "post-local-seo.html"}, {"t": "Google Business Profile: the checklist we run for every client", "c": "Google", "d": "The fields, photos, posts and habits that keep a profile complete, accurate and active.", "u": "post-google-business-profile.html"}, {"t": "Meta ads: why ad spend and agency fees are separate", "c": "Meta ads", "d": "Where your money goes when you run Instagram and Facebook ads with an agency \u2014 and why it is billed in two parts.", "u": "post-meta-ad-spend.html"}, {"t": "Opening a business in the U.S.: what to prepare before you file", "c": "Business", "d": "A plain-language checklist of the decisions and documents to have ready before you form an LLC or corporation.", "u": "post-us-business-setup.html"}];
 const faqs=[
@@ -110,7 +99,7 @@ let tiles=[],cur=0;
 function latBuild(L){
   const N=L*Math.ceil(14/L);
   lat.querySelectorAll('.lat-t').forEach(t=>t.remove());
-  tiles=Array.from({length:N},(_,j)=>{const t=document.createElement('div');t.className='lat-t';t.innerHTML='<div class="ph" data-ph="Project"></div><span class="shade"></span>';t.dataset.i=j%L;lat.insertBefore(t,$('#vf'));return t});
+  tiles=Array.from({length:N},(_,j)=>{const t=document.createElement('div');t.className='lat-t';t.innerHTML='<div class="ph '+(lists[tab][j%L][2]||'')+'" data-ph="Project"></div><span class="shade"></span>';t.dataset.i=j%L;lat.insertBefore(t,$('#vf'));return t});
   cur=0;latLayout();
 }
 function latLayout(){
@@ -135,7 +124,7 @@ function setP(i){
   pi=i;spin(i);const L=lists[tab],p=L[i];
   $$('#plist li').forEach((li,k)=>li.classList.toggle('on',k===i));
   const ph=$('#vfph');ph.style.opacity=0;
-  setTimeout(()=>{$('#vfn').textContent=p[0];$('#vft').textContent=(tab==='shorts'?'Shorts · ':'Project · ')+p[1];$('#vfc').textContent=String(i+1).padStart(2,'0')+' / '+String(L.length).padStart(2,'0');ph.style.opacity=1},250);
+  setTimeout(()=>{$('#vfn').textContent=p[0];$('#vft').textContent=(tab==='shorts'?'Reel · ':'Design · ')+p[1];$('#vfc').textContent=String(i+1).padStart(2,'0')+' / '+String(L.length).padStart(2,'0');ph.style.opacity=1},250);
   clearTimeout(ptimer);ptimer=setTimeout(()=>setP((pi+1)%L.length),3900);
 }
 $$('.tabbar button').forEach(b=>b.onclick=()=>{$$('.tabbar button').forEach(x=>x.classList.toggle('on',x===b));tab=b.dataset.tab;renderList()});
@@ -587,5 +576,21 @@ if(window.gsap&&window.ScrollTrigger){
   addEventListener('load',()=>ScrollTrigger.refresh());
   setTimeout(()=>ScrollTrigger.refresh(),1200);
 }
+
+/* ---------- MEDIA: fills .ph slots tagged mv-<key> (muted loop) or mi-<key> (image) ---------- */
+{const MB='assets/media/',still=matchMedia('(prefers-reduced-motion: reduce)').matches,vids=new Set();
+const gate=v=>{const g=v.closest('.lat-t,.cfc,.strip,.ds-pane');if(g)return g.classList.contains('on');const d=v.closest('.dcard');return d?d.style.filter==='none':true};
+const tick=()=>vids.forEach(v=>{if(!v.isConnected){vids.delete(v);return}const want=v._vis&&gate(v)&&!document.hidden;
+  if(want){if(!v.getAttribute('src'))v.src=v.dataset.src;if(v.paused)v.play().catch(()=>{})}else if(!v.paused)v.pause()});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{e.target._vis=e.isIntersecting});tick()},{rootMargin:'80px'});
+function hyd(){document.querySelectorAll('.ph').forEach(p=>{const m=p.className.match(/(?:^|\s)m([vi])-([\w-]+)/),key=m?m[1]+m[2]:'';
+  if((p.dataset.mk||'')!==key){p.querySelectorAll('.nm').forEach(x=>x.remove());p.dataset.mk=key;p.classList.toggle('has-m',!!m);
+    if(m){const host=p.querySelector('.zoom')||p,src=MB+m[2];let el;
+      if(m[1]==='v'&&!still){el=document.createElement('video');el.muted=true;el.loop=true;el.playsInline=true;el.preload='none';el.poster=src+'.jpg';el.dataset.src=src+'.mp4';el.setAttribute('muted','');el.setAttribute('playsinline','');el.setAttribute('aria-hidden','true');el.tabIndex=-1}
+      else{el=new Image();el.loading='lazy';el.decoding='async';el.alt='';el.src=src+'.jpg'}
+      el.className='nm';host.appendChild(el)}}
+  p.querySelectorAll('video.nm').forEach(v=>{if(!vids.has(v)){vids.add(v);if(!v.dataset.src){const k=p.dataset.mk.slice(1);v.dataset.src=MB+k+'.mp4'}v.muted=true;io.observe(v)}})})}
+window.nncMedia=hyd;hyd();let mt;new MutationObserver(()=>{clearTimeout(mt);mt=setTimeout(hyd,60)}).observe(document.body,{childList:true,subtree:true});
+if(!still)setInterval(tick,350);document.addEventListener('visibilitychange',tick)}
 
 }

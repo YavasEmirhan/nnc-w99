@@ -1013,6 +1013,18 @@ footer{position:relative;isolation:isolate}
 footer a[href^="tel:"]{white-space:nowrap}
 @media (max-width:640px){.mini .th{display:none}.mini{gap:6px;padding:10px 10px}.mini b{font-size:.8125rem}.mini span{font-size:.75rem}.mini .playdot{width:24px;height:24px}}
 
+/* ---------- real media in placeholder slots ---------- */
+.ph .nm{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;border-radius:inherit}
+.ph.has-m{background:#071726}
+.ph.has-m::before,.ph.has-m[data-ph]::after{display:none}
+.ph.has-m .zoom{background:none}
+.th.ph.has-m .nm{border-radius:inherit}
+.vcard .vplay{display:none}
+
+.ds-pane .ph .nm,.ds-card .ph .nm{object-position:left top}
+.ds-stage{aspect-ratio:16/10}
+@media (max-width:640px){.ds-pane .ds-tags{display:none}}
+
 /* ===== real NNC work & client logos ===== */
 .cl-ag{background-image:url(img/agora-logo.png)}
 .cl-an{background-image:url(img/anatolia-logo.png)}
